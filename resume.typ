@@ -19,7 +19,7 @@
       "Developer",
     ),
   ),
-  profile-picture: none,
+  profile-picture: image("photo.jpg"),
   date: datetime.today().display(),
   language: "ru",
   colored-headers: true,
@@ -30,13 +30,19 @@
 = Навыки
 
 #resume-skill-item(
-  "Языки программирования",
-  (strong("C++"), strong("Rust"), "Java", "C#", "JavaScript", "TypeScript"),
+  "Языки",
+  (strong("C++"), strong("Rust"), "SQL", "Golang", "Java", "Bash", "JavaScript"),
 )
 #resume-skill-item("Языки общения", (strong("Русский"), "Английский B1+"))
+
 #resume-skill-item(
-  "Программы",
-  (strong("Excel"), "Word", "Powerpoint", "Visual Studio"),
+  "Фреймворки",
+  ("React", "Svelte", "Actix", "Bevy"),
+)
+
+#resume-skill-item(
+  "Инструменты",
+  (strong("Git"), strong("Docker"), "Figma"),
 )
 
 = Образование
@@ -103,8 +109,7 @@
 )
 
 #resume-item[
-	- Работа с React
-	- Разработка компонентов ленты, автоматической подгрузки публикаций
+	- Разработка компонентов ленты, автоматической подгрузки публикаций на Svelte
 	- Интеграция с REST API бекенда
 ]
 
@@ -166,6 +171,5 @@
 #resume-item[
 	- Проектирование базы данных
 	- Контейнеризация, работа с Docker и Docker Compose
-	- Написание компонентов для Svelte
 	- Написание компонентов для React
 ]
